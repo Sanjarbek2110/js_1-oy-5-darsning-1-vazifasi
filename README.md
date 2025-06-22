@@ -1,0 +1,1 @@
+# js_1-oy-5-darsning-1-vazifasi
