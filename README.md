@@ -1,1 +1,1 @@
-# js_1-oy-5-darsning-1-vazifasi
+# js_1-oy-6-darsning-1-vazifasi
