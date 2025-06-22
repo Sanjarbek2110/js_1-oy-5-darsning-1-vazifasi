@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMode vs LightMode</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- BU noto‘g‘ri -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Bu juda muhim!
+      theme: {
+        extend: {},
+      }
+    }
+  </script>
+</head>
+<body class="pb-[217px] bg-[#C4B5A5] text-[#000000] font-[poppins] dark:bg-[#020100] dark:text-[#FFFFFF] pt-[54px] transition-colors duration-500">
+
+    <div class="container max-w-[1322px] mx-auto">
+
+        <!-- HEADER -->
+        <header class="flex justify-between items-center mb-[80px]">
+            <a href="#" class="logo text-[29px] font-extrabold">LOGO</a>
+
+            <div class="left flex items-center gap-[16px]">
+                <ul class="flex gap-[88px]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+
+                <div class="buttons flex gap-[16px]">
+                    <button onclick="lightMode()" class="cursor-pointer rounded-[6px] bg-[#fb982f] py-[10px] px-[27px] text-[13px] font-bold dark:bg-[#C4B5A5] dark:text-white">LightMode</button>
+                    <button onclick="darkMode()" class="cursor-pointer border border-black rounded-[6px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] text-white bg-black py-[10px] px-[27px] text-[13px] font-bold dark:bg-[#FA9021] dark:text-white">DarkMode</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero flex justify-between items-start">
+            <div class="right flex flex-col w-[426px]">
+                <h1 class="text-[36px] font-bold mb-[70px]">Work that we produce for our clients</h1>
+                <p class="font-medium mb-[89px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                <a href="#" class="w-max rounded-[40px] bg-[linear-gradient(112.96deg,_rgb(250,131,5)_1.518%,_rgb(251,158,60)_117.454%)] py-[14px] px-[30px] font-medium dark:bg-[linear-gradient(112.96deg,_rgb(250,131,5)_1.518%,_rgb(251,158,60)_117.454%)] dark:text-white">Get more details</a>
+            </div>
+
+            <img src="./Rectangle 24.png" alt="" class="left">
+        </section>
+
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
